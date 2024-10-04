@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+* {
+  font-family: "Quicksand", sans-serif;
+  color: #333;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+}
+
+.App {
+  background-color: rgb(255, 252, 252);
+  min-height: 100vh;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid hsl(0, 0%, 90%);
+}
+
+.nav .logo h1 {
+  min-width: 120px;
+  color: rgb(197, 62, 197);
+  font-size: 1.8rem;
+}
+
+.nav .logo #logo-h1 {
+  text-decoration: none;
+}
+
+.nav-links ul {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  color: #c53ec5;
+}
+
+.nav-links #links {
+  /* color: black; */
+  text-decoration: none;
+}
+
+#create-form {
+  margin: 20rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 5rem auto 1.5rem;
+  text-align: left;
+  max-width: 600px;
+}
+
+#create-form button {
+  display: block;
+  margin-top: 0.7rem;
+  background-color: #c53ec5;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  width: fit-content;
+  color: white;
+}
+
+#borders {
+  border: 1px solid #9e9e9ea1;
+  border-radius: 5px;
+  padding: 0.7rem 1rem;
+}
+
+.content {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: left;
+}
+
+#save-btn {
+  background-color: #c53ec5;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  margin-top: 1.2rem;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+}
