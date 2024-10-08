@@ -1,1 +1,25 @@
-{}
+{
+  "students": [
+    {
+      "id": "1",
+      "name": "Njau Jeff",
+      "email": "njaujeff@gmail.com",
+      "admin": "54535",
+      "course": "Day Diploma"
+    },
+    {
+      "name": "kesfnw",
+      "course": "online certificate",
+      "email": "kesfnw@mail.com",
+      "admin": "22222",
+      "id": "c634"
+    },
+    {
+      "id": "7e88",
+      "name": "kesfnw",
+      "email": "lnsaef",
+      "admin": "lafn",
+      "course": "lanfl"
+    }
+  ]
+}

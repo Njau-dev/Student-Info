@@ -25,7 +25,7 @@ body {
 
 .nav .logo h1 {
   min-width: 120px;
-  color: rgb(197, 62, 197);
+  color: #3e6dc5;
   font-size: 1.8rem;
 }
 
@@ -42,7 +42,7 @@ body {
 .nav-links {
   display: flex;
   gap: 1rem;
-  color: #c53ec5;
+  color: #3e6dc5;
 }
 
 .nav-links #links {
@@ -63,7 +63,7 @@ body {
 #create-form button {
   display: block;
   margin-top: 0.7rem;
-  background-color: #c53ec5;
+  background-color: #3e6dc5;
   padding: 0.8rem 1.2rem;
   border: none;
   border-radius: 6px;
@@ -87,7 +87,7 @@ body {
 }
 
 #save-btn {
-  background-color: #c53ec5;
+  background-color: #3e6dc5;
   border: none;
   padding: 0.7rem 1.5rem;
   margin-top: 1.2rem;
@@ -98,4 +98,73 @@ body {
   flex-direction: column;
   align-items: center;
   margin: 2rem;
+}
+
+/* StudentList css */
+
+/* Table styling */
+.student-table {
+  width: 60vw;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.student-table th,
+.student-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.student-table th {
+  background-color: #f2f2f2;
+  color: #333;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-weight: bold;
+}
+
+/* Row hover effect */
+.student-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.action-link {
+  color: blue;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.action-link:hover {
+  text-decoration: underline;
+}
+
+/* Button styling */
+.view-btn,
+.edit-btn,
+.delete-btn {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.view-btn {
+  background-color: #2196F3;
+}
+
+.delete-btn {
+  background-color: #f44336;
+}
+
+.edit-btn:hover,
+.delete-btn:hover,
+.view-btn:hover {
+  opacity: 0.8;
 }
