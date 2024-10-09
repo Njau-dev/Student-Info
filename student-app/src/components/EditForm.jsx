@@ -57,54 +57,51 @@ const EditStudent = () => {
 
 
     return (
-        <div>
+        <div className="edit-student-container">
             <h2>Edit Student Details</h2>
+
             <form onSubmit={handleSubmit}>
-                <label>
-                    Name:
-                    <input
-                        type="text"
-                        name="name"
-                        value={student.name}
-                        onChange={handleChange}
-                    />
-                </label>
+                <label>Name:</label>
+                <input
+                    type="text"
+                    name="name"
+                    value={student.name}
+                    onChange={handleChange}
+                />
                 <br />
 
-                <label>
-                    E-mail:
-                    <input
-                        type="text"
-                        name="email"
-                        value={student.email}
-                        onChange={handleChange}
-                    />
-                </label>
+                <label>E-mail:</label>
+                <input
+                    type="text"
+                    name="email"
+                    value={student.email}
+                    onChange={handleChange}
+                />
                 <br />
 
-                <label>
-                    Admission no:
-                    <input
-                        type="text"
-                        name="admin"
-                        value={student.admin}
-                        onChange={handleChange}
-                    />
-                </label>
+                <label>Admission no:</label>
+                <input
+                    type="text"
+                    name="admin"
+                    value={student.admin}
+                    onChange={handleChange}
+                />
                 <br />
 
-                <label>
-                    Course:
-                    <input
-                        type="text"
-                        name="course"
-                        value={student.course}
-                        onChange={handleChange}
-                    />
-                </label>
+                <label>Course:</label>
+                <input
+                    type="text"
+                    name="course"
+                    value={student.course}
+                    onChange={handleChange}
+                />
                 <br />
 
-                <button type="submit">Update Student</button>
+                <div className="button-group">
+                    <button className='view-btn' type="submit">Update Student</button>
+
+                    <button className='delete-btn' type="button" onClick={() => history.push('/')}>Cancel</button>
+                </div>
             </form>
         </div>
     );

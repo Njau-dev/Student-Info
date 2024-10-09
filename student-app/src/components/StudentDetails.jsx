@@ -38,29 +38,39 @@ const StudentDetails = () => {
       })
   }
   return (
-    <div className="details">
+    <div className="view-student">
 
       {students && (
         <article>
-          <h3>{students.name}</h3>
-          <p> Done by: {students.author}</p>
-          <div>{students.body}</div>
-          <button onClick={handleDelete}
-            variant="danger" className="mt-3" type="submit">Delete Student </button>
+          <h2>Student Details</h2>
+
+          <p><strong>Name:</strong> {students.name}</p>
+          <p><strong>Admission no:</strong> {students.admin}</p>
+          <p><strong>E-mail:</strong> {students.email}</p>
+          <p><strong>Course:</strong> {students.course}</p>
+
+
+          <Link to="/">
+            <button className='view-btn'>All students</button>
+          </Link>
 
           <Link to={`/edit-details/${students.id}`}>
-            <button>
+            <button className='edit-btn'>
               Edit Student
             </button>
           </Link>
 
+          <button className='delete-btn' onClick={handleDelete}>
+            Delete Student
+          </button >
+
         </article>
       )}
 
-      <ToastContainer />
-      {/* this wont work */}
     </div>
   );
 }
 
 export default StudentDetails
+
+// <ToastContainer />

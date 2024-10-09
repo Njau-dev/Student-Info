@@ -1,11 +1,11 @@
 {
   "students": [
     {
-      "id": "1",
       "name": "Njau Jeff",
-      "email": "njaujeff@gmail.com",
+      "course": "Day Diploma",
+      "email": "njau@test.com",
       "admin": "54535",
-      "course": "Day Diploma"
+      "id": "1"
     },
     {
       "name": "kesfnw",
@@ -15,11 +15,32 @@
       "id": "c634"
     },
     {
-      "id": "7e88",
-      "name": "kesfnw",
-      "email": "lnsaef",
-      "admin": "lafn",
-      "course": "lanfl"
+      "name": "Final test",
+      "course": "diploma testing",
+      "email": "edittest@mail.com",
+      "admin": "11111",
+      "id": "7e88"
+    },
+    {
+      "id": "730f",
+      "name": "test gpt",
+      "email": "test@mail.com",
+      "admin": "555556",
+      "course": "night certificate"
+    },
+    {
+      "name": "test gpt",
+      "course": "test certificate",
+      "email": "test@mail.com",
+      "admin": "33333",
+      "id": "8a30"
+    },
+    {
+      "id": "2fe9",
+      "name": "test walker",
+      "email": "walkertest@mail.com",
+      "admin": "222222",
+      "course": "Day, Degree Cyber Sec"
     }
   ]
 }
