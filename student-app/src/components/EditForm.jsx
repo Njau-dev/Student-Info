@@ -49,8 +49,9 @@ const EditStudent = () => {
         e.preventDefault();
         try {
             await axios.put(`http://localhost:4000/students/${id}`, student);
-            history.push('/');
+            alert('Student Updated Successfully')
 
+            history.push('/');
         } catch (err) {
             setError('Could not update student');
         }

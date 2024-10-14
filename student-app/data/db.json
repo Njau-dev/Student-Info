@@ -1,18 +1,18 @@
 {
   "students": [
     {
-      "id": "6af8",
       "name": "Njau Jeff",
       "email": "njau@test.com",
       "admin": "11111",
-      "course": "Diploma Day Software"
+      "course": "Diploma Day Software",
+      "id": "6af8"
     },
     {
-      "id": "74b4",
       "name": "Charles Walker",
       "email": "charles@test.com",
       "admin": "22222",
-      "course": "Diploma Day Cyber"
+      "course": "Diploma Day Cyber",
+      "id": "74b4"
     },
     {
       "id": "b017",
@@ -20,6 +20,13 @@
       "email": "ibra@test.com",
       "admin": "33333",
       "course": "Certificate Online Cyber"
+    },
+    {
+      "id": "f7e3",
+      "name": "khfkda",
+      "email": "fadk",
+      "admin": "afdk",
+      "course": "gda"
     }
   ]
 }

@@ -53,6 +53,8 @@ const StudentList = ({ students: initialStudents, title }) => {
                             <td>{student.name}</td>
                             <td>{student.admin}</td>
                             <td>{student.course}</td>
+
+                            {/* buttons */}
                             <td>
                                 <Link to={`/student-details/${student.id}`}>
                                     <button className="view-btn">View</button>

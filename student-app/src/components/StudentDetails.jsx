@@ -44,6 +44,7 @@ const StudentDetails = () => {
           <p><strong>Course:</strong> {students.course}</p>
 
 
+          {/* buttons */}
           <Link to="/">
             <button className='view-btn'>All students</button>
           </Link>
