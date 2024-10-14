@@ -31,6 +31,7 @@ const StudentDetails = () => {
         })
       })
   }
+
   return (
     <div className="view-student">
 
