@@ -1,46 +1,25 @@
 {
   "students": [
     {
+      "id": "6af8",
       "name": "Njau Jeff",
-      "course": "Day Diploma",
       "email": "njau@test.com",
-      "admin": "54535",
-      "id": "1"
-    },
-    {
-      "name": "kesfnw",
-      "course": "online certificate",
-      "email": "kesfnw@mail.com",
-      "admin": "22222",
-      "id": "c634"
-    },
-    {
-      "name": "Final test",
-      "course": "diploma testing",
-      "email": "edittest@mail.com",
       "admin": "11111",
-      "id": "7e88"
+      "course": "Diploma Day Software"
     },
     {
-      "id": "730f",
-      "name": "test gpt",
-      "email": "test@mail.com",
-      "admin": "555556",
-      "course": "night certificate"
+      "id": "74b4",
+      "name": "Charles Walker",
+      "email": "charles@test.com",
+      "admin": "22222",
+      "course": "Diploma Day Cyber"
     },
     {
-      "name": "test gpt",
-      "course": "test certificate",
-      "email": "test@mail.com",
+      "id": "b017",
+      "name": "Ibrahim Mutembei",
+      "email": "ibra@test.com",
       "admin": "33333",
-      "id": "8a30"
-    },
-    {
-      "id": "2fe9",
-      "name": "test walker",
-      "email": "walkertest@mail.com",
-      "admin": "222222",
-      "course": "Day, Degree Cyber Sec"
+      "course": "Certificate Online Cyber"
     }
   ]
 }

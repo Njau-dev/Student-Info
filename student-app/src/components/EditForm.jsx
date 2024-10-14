@@ -24,7 +24,9 @@ const EditStudent = () => {
                 const response = await axios.get(`http://localhost:4000/students/${id}`);
                 setStudent({
                     name: response.data.name,
-                    course: response.data.course,
+                    email: response.data.email,
+                    admin: response.data.admin,
+                    course: response.data.course
                 });
 
             } catch (err) {
@@ -48,7 +50,6 @@ const EditStudent = () => {
         try {
             await axios.put(`http://localhost:4000/students/${id}`, student);
             history.push('/');
-            // Redirect to the home page after successful update
 
         } catch (err) {
             setError('Could not update student');

@@ -1,13 +1,34 @@
-import React from 'react'
+import axios from 'axios';
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useHistory } from 'react-router-dom/cjs/react-router-dom.min'
+import { toast, ToastContainer } from 'react-toastify';
 
-const StudentList = ({ students, title, deleteStudent }) => {
+const StudentList = ({ students: initialStudents, title }) => {
 
+    const [students, setStudents] = useState(initialStudents);
     const history = useHistory();
 
     const handleEdit = (id) => {
         history.push(`/student-details/${id}`);
+    };
+
+    const deleteStudent = (id) => {
+        axios.delete(`http://localhost:4000/students/${id}`)
+            .then(res => {
+                toast.success('Student deleted successfully', {
+                    position: toast.POSITION.TOP_LEFT,
+                    autoClose: 3000,
+                });
+
+                setStudents(students.filter(student => student.id !== id));
+            })
+            .catch(err => {
+                toast.error('An error occurred while deleting the student', {
+                    position: toast.POSITION.TOP_LEFT,
+                    autoClose: 3000,
+                });
+            });
     };
 
     return (
@@ -55,6 +76,7 @@ const StudentList = ({ students, title, deleteStudent }) => {
                 </tbody>
             </table>
 
+            <ToastContainer />
         </div>
     )
 }

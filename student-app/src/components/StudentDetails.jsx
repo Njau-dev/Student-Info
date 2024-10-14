@@ -20,13 +20,7 @@ const StudentDetails = () => {
 
     axios.delete('http://localhost:4000/students/' + id)
       .then(res => {
-        // alert("student deleted");
-
-        toast.success('student deleted successfully', {
-          position: toast.POSITION.TOP_LEFT,
-          autoClose: 3000,
-        })
-
+        alert("Student Deleted Successfully");
         history.push('/');
       })
 
@@ -67,10 +61,10 @@ const StudentDetails = () => {
         </article>
       )}
 
+      <ToastContainer />
+
     </div>
   );
 }
 
 export default StudentDetails
-
-// <ToastContainer />
